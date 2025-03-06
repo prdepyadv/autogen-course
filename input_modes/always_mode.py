@@ -9,6 +9,7 @@ llm_config = {
     "model": model,
     "api_key": os.environ.get("OPENAI_API_KEY"),
 }
+
 agent_with_animal = ConversableAgent(
     "agent_with_animal",
     system_message="You are thinking of an animal. You have the animal 'elephant' in your mind, and I will try to guess it. "

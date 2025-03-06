@@ -20,7 +20,6 @@ agent_with_animal = ConversableAgent(
     human_input_mode="NEVER",  # never ask for human input
 )
 
-
 agent_guess_animal = ConversableAgent(
     "agent_guess_animal",
     system_message="I have an animal in my mind, and you will try to guess it. "

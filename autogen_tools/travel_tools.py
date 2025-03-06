@@ -43,13 +43,6 @@ assistant = ConversableAgent(
     llm_config=llm_config,
 )
 
-# Define the assistant agent that suggests tool calls.
-assistant = ConversableAgent(
-    name="TravelAssistant",
-    system_message="You are a helpful AI travel assistant. Return 'TERMINATE' when the task is done.",
-    llm_config=llm_config,
-)
-
 # The user proxy agent is used for interacting with the assistant agent and executes tool calls.
 user_proxy = ConversableAgent(
     name="User",
